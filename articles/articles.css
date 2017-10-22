@@ -13,11 +13,14 @@
 
 aside {
     margin-top: 30px;
+    margin-bottom: 30px;
     height: 400px;
     width: 20%;
     background-color: green;
     font-size: 40px;
     display: flex;
+    float: right;
+
 }
 
 footer {
