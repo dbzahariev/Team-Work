@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Team-work</title>
     <link rel="stylesheet" href="vera.css">
+    <style>.mySlides {display:none;}</style>
 </head>
 <body>
-<main>
    <nav>
        <figure class="logo" alt="logo">
            <img src="logo.png" />
@@ -38,12 +38,32 @@
            </li>
        </ul>
    </nav>
-    <header>
-        <div class="arrow-down">
-           <iframe src="https://www.youtube.com/embed/GJKnz9hlB3Q?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <header>      
+           <iframe src="https://www.youtube.com/embed/WLzMM0CL7iA?rel=0" frameborder="0" allowfullscreen></iframe>
+                <figure class="slideshow">
+                <button><a ref="#">View Products</a></button>
+                <img class="mySlides" src="Hemp-Seeds.jpg" alt="hemp seeds">
+                <img class="mySlides" src="Hemp-Materials.jpg" alt="hemp materials">
+                <img class="mySlides" src="hemp-food.jpg" alt="hemp food">
+                <img class="mySlides" src="hemp-cbd.jpg" alt="hemp cbd">
+                </figure>
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) { slideIndex = 1 }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000);
+                }
+            </script>
+
     </header>
-    <div id="banner"></div>
-</main>
 </body>
 </html>
