@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source",
+    "\\Source\\video",
+    "\\vera"
   ],
+  "SelectedNode": "\\Source\\video\\Last_edition.mp4",
   "PreviewInSolutionExplorer": false
 }

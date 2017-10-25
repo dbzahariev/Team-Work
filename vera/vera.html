@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,7 @@
 </head>
 <body>
    <nav>
-       <figure class="logo" alt="logo">
-           <img src="logo.png" />
-       </figure>
+           <img class="logo" src="logo.png" />
        <ul class="navigation">
            <li><a href="#">Home</a></li>
            <li><a href="#">About Us</a></li>
@@ -26,12 +24,12 @@
            </li>
            <li><a href="#">Contacts</a></li>
            <li>
-               <form>
+               <div class="form">
                     <input type="text" placeholder="Search..." title="Search"/>
                     <a id="search" href="#">
                        <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
-               </form>
+               </div>
            </li>
            <li>
                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -39,31 +37,9 @@
        </ul>
    </nav>
     <header>      
-           <iframe src="https://www.youtube.com/embed/WLzMM0CL7iA?rel=0" frameborder="0" allowfullscreen></iframe>
-                <figure class="slideshow">
-                <button><a ref="#">View Products</a></button>
-                <img class="mySlides" src="Hemp-Seeds.jpg" alt="hemp seeds">
-                <img class="mySlides" src="Hemp-Materials.jpg" alt="hemp materials">
-                <img class="mySlides" src="hemp-food.jpg" alt="hemp food">
-                <img class="mySlides" src="hemp-cbd.jpg" alt="hemp cbd">
-                </figure>
-            <script>
-                var slideIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > x.length) { slideIndex = 1 }
-                    x[slideIndex - 1].style.display = "block";
-                    setTimeout(carousel, 2000);
-                }
-            </script>
-
+           <video controls="controls" >
+               <source src="../Source/video/Last-edition.mp4" type="video/mp4" />
+           </video>
     </header>
 </body>
 </html>
