@@ -118,12 +118,22 @@ body {
 /*#region Aside*/
 aside {
     width: 30%;
-    height: 400px;
+    /*height: 400px;*/
     background-color: rgba(89, 225, 43, 0.3);
     font-size: 40px;
     display: flex;
     float: right;
     border-radius: 10px 10px 30px 30px;
+    /*height: 100%;*/
+}
+
+aside p {
+    max-width: 100%;
+    max-height: 110%;
+    /*margin-bottom: 30px;*/
+    margin: 10px;
+    /*width: 100%;*/
+    text-align: justify;
 }
 /*#endregion*/
 /*#endregion*/
