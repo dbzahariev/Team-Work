@@ -29,22 +29,30 @@ footer {
 
 /*#region Aside*/
 aside {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 30%;
     height: 400px;
-    width: 200px;
     background-color: green;
     font-size: 40px;
     display: flex;
     float: right;
+    border-radius: 10px;
 }
 /*#endregion*/
 
+body {
+    width: 100%;
+    /*max-width: 1024px;*/
+    /*text-align: center;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
 div.prod {
     float: left;
-    width: 70%;
-    margin-top: 70px;
+    /* width: 1040px; */
+    margin-top: 50px;
     margin-left: 73px;
+    margin-bottom: 30px;
     display: flex;
     /*flex-flow: row ;*/
     flex-wrap: nowrap;
@@ -54,7 +62,6 @@ div.prod {
 .img-butt {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .img-butt button {
@@ -63,25 +70,36 @@ div.prod {
     background-color: red;
     border-radius: 20px;
     border: 1px solid transparent;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
-.img-butt button:hover {
-    cursor: pointer;
+.img-butt button a {
+    text-decoration: none;
+    color: white;
 }
 
 .img-butt img {
     float: left;
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
 }
 
 .content p {
     text-align: justify;
     font-size: 25px;
+    width: 100%;
+}
+
+.content h1 {
+    margin: 10px 0;
 }
