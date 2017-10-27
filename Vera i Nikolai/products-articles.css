@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+#slogan{
+    width: 900px;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 160px;
+    color: #ffffff;
+    font-size: 40px;
+    background: #191919;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    /*font-family:'Times New Roman';*/
+    font-weight: 300;
+    padding:10px 30px;
+}
+nav{
+    width: 900px;
+}
+
+#logo{
+    margin-top: 5px;
+    width: 120px;
+}
+
+/************ NAV BAR ************/
+
+nav {
+    /*height: 80px;*/
+    width: 900px;
+    margin:0 auto;
+    /*background: #191919;*/
+    display: flex;
+    align-items: center;
+}
+.nbar {
+    height: 80px;
+    width: 100%;
+    background: #191919;
+    /*position: fixed;*/
+    /*z-index:3;*/
+}
+
+.nbar::after {
+    content:'';
+    display: block;
+    clear:both;
+}
+
+.navigation {
+    width: 100%;
+    float:right;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: flex-end;
+    /*margin-right: 30px;*/
+}
+
+.products-nav {
+    padding: 0;
+    padding-top: 5px;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    background: #191919;
+    position: absolute;
+    top: 36px;
+    padding-top: 10px;
+    z-index: 5;
+}
+
+.drop {
+    margin: auto;
+    padding:0 10px;
+}
+
+.products-nav:hover .dropdown {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    /*font-family: 'Lato', sans-serif;*/
+    font-weight:300;
+    color: #FFF;
+    font-size: 14px;
+    /*font-weight: 700;*/
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0 10px;
+    line-height: 35px;
+}
+
+.navigation a:hover {
+    /*-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);*/
+    /*-webkit-mask-size: 200%;*/
+    animation: shine 2s infinite;
+    color: #FF4300;
+}
+
+.form {
+    display: flex;
+    align-items:center;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+input {
+    background:none;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+a#search {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    color: #000;
+}
+
+a#search:hover, .cart:hover {
+    animation: none;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+
+/************ NAV BAR ************/
+header {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.fullscreen-bg__video {
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-bg{
+    position: relative;
+}
+
+.about-us,footer,.products{
+    width: 900px;
+    margin:0 auto;
+    margin-bottom: 90px;
+}
+
+.travel-title-container{
+    margin: 50px 0;
+}
+
+.mission,
+.about-us,.about-us-title{
+    text-align: center;
+    font-weight: 300;
+}
+
+.git-button {
+    font-size: 0.8em;
+    padding: 10px 75px;
+    border-radius: 20px;
+    border: 2px solid #535353;
+    background-color: transparent;
+    color: #535353;
+    text-transform: uppercase;
+}
+
+.git-button:hover {
+    background-color: #FF4300;
+    border: 2px solid #FF4300;
+    color: #000000;
+    cursor: pointer;
+}
+
+.about-us-container>p{
+    margin: 10px;
+}
+
+.mission-p{
+    text-align: center;
+    margin:20px auto;
+    margin-bottom: 50px;
+}
+
+.about-us-title,
+.mission{
+    padding: 30px 0;
+    font-size: 35px;
+    color: #535353;
+}
+
+.about-us-title,
+.mission{
+    width: 300px;
+    height: 15px;
+    line-height: 15px;
+    background: #30dd96;
+    margin:0 auto;
+    color: #ffffff;
+}
+
+
+
+/*-----------------------------------Let's the party begin - Products-----------------------------------*/
+
+.background-products{
+    background: url("images/stock-photo-background-texture-of-marijuana-plants-at-indoor-cannabis-farm-with-flat-vintage-style-354999053.jpg");
+    background-size: 100%;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.products{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    color: #535353;
+}
+
+p{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 19px;
+    color: #535353;
+
+}
+
+.color{
+    width:100%;
+    height: 300px;
+    background: #70E4BD;
+    position: absolute;
+    top: 47px;
+}
+
+.prd-title{
+    width: 900px;
+    margin: 0 auto;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 300;
+    background: #191919;
+    padding: 10px 0;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.planting-seed{
+    width: 24%;
+    /*justify-content: space-between;*/
+    background: #ffffff;
+    height: 400px;
+    /*new one*/
+    overflow: hidden;
+    position: relative;
+}
+
+.planting-seed div img{
+    width: 120%;
+    position: absolute;
+    left: -30px;
+    transition: width 1s, height 1s;
+
+}
+
+.planting-seed div{
+    width: 100%;
+    height: 36%;
+    overflow: hidden;
+    position: relative;
+}
+
+.planting-seed .color{
+    transition: top 0.6s;
+}
+
+.planting-seed:hover{
+    cursor: pointer;
+}
+
+.planting-seed:hover .color{
+    transition: top 0.6s;
+    top: 10px;
+}
+
+.planting-seed:hover img{
+    opacity: 0.5;
+}
+
+
+/*.planting-seed img{*/
+    /*transition: width 1s, height 1s;*/
+/*}*/
+
+.planting-seed:hover div img{
+   transition: width 1s, height 1s;
+    width:120%;
+    height:auto;
+}
+
+
+.planting-seed:hover > h1{
+    color: #5E2255;
+}
+
+/*.planting-seed .request{*/
+    /*width: 80%;*/
+    /*height: 30px;*/
+    /*background: none;*/
+    /*border: 2px solid #343333;*/
+    /*border-radius: 15px;*/
+    /*position: absolute;*/
+    /*z-index: 2;*/
+/*}*/
+
+/*.planting-seed .request:hover{*/
+    /*width: 80%;*/
+    /*height: 30px;*/
+    /*background-color: #FF4300;*/
+    /*border: 2px solid #FF4300;*/
+    /*border-radius: 15px;*/
+/*}*/
+
+/*-----------------------------------Let's the party begin - Footer-----------------------------------*/
+/*footer {*/
+    /*width: 100%;*/
+    /*background: #07333c;*/
+/*}*/
+
+/*.footer{*/
+    /*width: 900px;*/
+    /*margin:0 auto;*/
+/*}*/
+
+footer {
+    width: 100%;
+    background: #191919;
+    margin: 0;
+}
+
+.footer-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list {
+    /*float:right;*/
+    align-self: center;
+}
+
+.footer-list-item {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.footer-item-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #303030;
+    border-radius: 100%;
+    position: relative;
+}
+
+.footer-item-link:hover {
+    background: #FF4300;
+    color: #fff;
+}
+
+.footer-item-link::before {
+    font-family: FontAwesome, sans-serif;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.facebook-link::before {
+    content: '\f09a';
+    top: 9px;
+    left: 11px;
+}
+
+.twitter-link::before {
+    content: '\f099';
+    top: 9px;
+    left: 10px
+}
+
+.google-plus-link::before {
+    content: '\f0d5';
+    top: 8px;
+    left: 7px;
+}
+
+.linkedin-link::before {
+    content: '\f0e1';
+    top: 5px;
+    left: 10px;
+}
+
+ul li{
+    list-style: none;
+    /*color: #ffffff;*/
+}
+
+.contact-list>h1{
+    font-weight: 300;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.contact-list ul li{
+    font-size: 12px;
+    color: #c4c4c4;
+    font-weight: 300;
+    list-style: none;
+}
+
+.contact-list ul{
+    margin:10px 0;
+}
+
+.contact-list span{
+    color: #e1e1e1;
+    font-weight: 400;
+}
+
+/*-----------------------------------Let's the party end - Footer-----------------------------------*/
+
+@media screen and (max-width: 900px){
+    section, .about-us,
+    .background-products, .products, nav, #slogan{
+        max-width:100%;
+    }
+
+    .prd-title{
+        padding-left: 10px;
+    }
+
+    .fullscreen-bg__video {
+        /*max-width: auto;*/
+        max-height: 120%;
+    }
+
+    header{
+        max-width:100%;
+        height: auto;
+    }
+
+    .about-us{
+
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    section{
+        max-width: 100%;
+    }
+
+    .products{
+        display: block;
+    }
+
+    .planting-seed{
+        width: calc(100% - 25px);
+        margin:0px auto;
+        height: 160px;
+        margin-top: 10px;
+        background: #ffffff;
+    }
+
+    .planting-seed div{
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+
+    p{
+        width:65%;
+    }
+    
+    h2, p{
+        text-align: left;
+        margin-left: 220px;
+    }
+
+    .color{
+        display: none;
+    }
+
+    .prd-title{
+        max-width: calc(100% - 20px);
+    }
+
+    /*new*/
+
+    .navigation {
+        justify-content:center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .navigation a {
+        margin-right: 10px;
+    }
+    input {
+        width: 90px;
+    }
+
+    /*new end*/
+}
+
+@media screen and (max-width: 540px) {
+    .footer-list{
+        float: none;
+        text-align: center;
+        max-width: 100%;
+        padding: 0;
+    }
+}
