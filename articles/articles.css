@@ -139,7 +139,7 @@ aside p {
 /*#endregion*/
 
 /*#region Responsive*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
     .prod {
         flex-direction: column;
     }
@@ -162,7 +162,7 @@ aside p {
     }
 
     div.prod {
-        width: 100%;
+        width: 96%;
         margin: 0;
     }
 
@@ -174,6 +174,10 @@ aside p {
     aside {
         width: 100%;
         border-radius: 10px 10px 0 0;
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .content {
@@ -187,5 +191,4 @@ aside p {
         text-align: center;
     }
 }
-
 /*#endregion*/
