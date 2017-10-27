@@ -3,56 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Form-Project.css">
-    <title>Form</title>
+    <title>Commercial Form</title>
 </head>
 <body>
-    <nav>
+<div class="background">
+    <main>
         <div class="container">
-        <h1>Web Site Change Request Form</h1>
+            <h1>- Commercial Form -</h1>
         <form action="#">
             <div class="row">
                 <div class="col-25">
-                    <label for="fname">First Name</label>
+                    <label for="name">Contact name</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="name" name="contactname" placeholder="Your name..">
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="lname">Last Name</label>
+                    <label for="cname">Company name</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <input type="text" id="cname" name="companyname" placeholder="Your company name..">
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="country">How Urgent</label>
+                    <label for="baddress">Company Billing Address</label>
+
+                </div>
+                <div class="col-75">
+                    <input type="text" id="baddress" name="billingaddress"
+                           placeholder="Your company`s billing address..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-mail Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="E-mail Address..">
+                </div>
+            </div>
+
+            <p class="p">Payment Method</p>
+            <div class="p">
+                <input type="radio" id="contactChoice1"
+                       name="contact" value="text" checked>
+                <i class="fa fa-btc"></i>
+                <label for="contactChoice1">BitCoins</label>
+            </div>
+            <div class="p">
+                <input type="radio" id="contactChoice2"
+                       name="contact" value="text">
+                <i class="fa fa-money"></i>
+                <label for="contactChoice2">Cash</label>
+
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Delivery on Continent</label>
                 </div>
                 <div class="col-75">
                     <select id="country" name="country">
-                        <option value="we">This</option>
-                        <option value="will">That</option>
-                        <option value="see">Not that</option>
+                        <option value="will">Europe</option>
+                        <option value="we">Asia</option>
+                        <option value="see">North America</option>
+                        <option value="see">South America</option>
+                        <option value="see">Australia</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="subject">NEW Text/Content:</label>
+                    <label for="quantity">Order Quantity</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="number" id="quantity" name="orderquantity" placeholder="Order Quantity..">
                 </div>
-                <button>
-                    Submit
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Note:</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="If you would like us to take notice of smth.."
+                              style="height:200px"></textarea>
+                </div>
+
+                <button type="submit" class="submit">
+                    <span>Submit</span>
                 </button>
+                <button class="aboard">
+                    <span>Aboard</span>
+                </button>
+
             </div>
 
         </form>
 
         </div>
-    </nav>
+    </main>
+</div>
 </body>
 </html>
